@@ -33,8 +33,8 @@ try:
   # write your own comment -what does the next line do? 
       fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
-    streamlit.dataframe(fruityvice_normalized)
-    streamlit.write('The user entered ', fruit_choice)
+      streamlit.dataframe(fruityvice_normalized)
+      streamlit.write('The user entered ', fruit_choice)
 except UrlError as e:
      streamlit.error() 
 streamlit.stop()

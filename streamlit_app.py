@@ -40,7 +40,7 @@ my_data_rows=my_cur.fetchall();
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_rows = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
-streamlit.text(my_data_row)
+#streamlit.text(my_data_rows)
 
-streamlit.header("Fruit load list")
+streamlit.header("Fruit load list contains")
 streamlit.dataframe(my_data_rows)
